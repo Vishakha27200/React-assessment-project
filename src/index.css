@@ -149,7 +149,7 @@ h2 {
   padding: 0.6rem 1rem;
   font-size: 1rem;
   border-radius: 8px;
-  border: 1.5px solid #91c1c1; /* Lighter teal */
+  border: 1.5px solid #91c1c1; 
   background-color: white;
   cursor: pointer;
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
@@ -158,6 +158,25 @@ h2 {
 .filter-select:focus {
   border-color: #4aa3a3;
   box-shadow: 0 0 4px rgba(74, 163, 163, 0.25);
+}
+
+.filter-select option {
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: #333;
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .filter-select option {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-select option {
+    font-size: 0.9rem;
+  }
 }
 
 /* Product detail css */
@@ -305,3 +324,5 @@ h2 {
     text-align: center;
   }
 }
+
+
